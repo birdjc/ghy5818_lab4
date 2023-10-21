@@ -97,7 +97,7 @@
     
             L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(map);
             
-            map.attributionControl.addAttribution('Population data &copy; <a href="http://census.gov/">US Census Bureau</a> | This map is made by <b>Jonah Bird</b>');
+            map.attributionControl.addAttribution('Bike trip data data &copy; <a href="https://metro.strava.com">Strava Metro</a> | This map is made by <b>Jonah Bird</b>');
     
             geojson = L.geoJson.ajax("data/ridedata_blockgroup.geojson", {
             style: style
@@ -194,7 +194,7 @@
                 
             labels.push('<i style="background:' + colors[grades.length - 1] + '"></i> ' + grades[grades.length - 1] + ' +');            
             $(".legend").html(labels.join('<br>'));
-    
+
         </script>
     
     </body>
